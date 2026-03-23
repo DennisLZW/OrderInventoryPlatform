@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "namePrefix": { "value": "oip" },
+    "location": { "value": "eastus" },
+    "postgresAdminLogin": { "value": "oipadmin" },
+    "postgresAdminPassword": { "value": "<REPLACE_IN_PORTAL_OR_USE_CLI_SECURE>" },
+    "databaseName": { "value": "order_inventory_db" },
+    "apiImage": { "value": "<your-acr>.azurecr.io/order-inventory-api:latest" }
+  }
+}
