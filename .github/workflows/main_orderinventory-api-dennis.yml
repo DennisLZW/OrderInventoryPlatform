@@ -21,19 +21,16 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.x'
+          dotnet-version: '8.0.x'
 
-      - name: Restore
-        working-directory: ./backend
-        run: dotnet restore
+      - name: Restore solution
+        run: dotnet restore ./backend/OrderInventoryPlatform.sln
 
-      - name: Build with dotnet
-        working-directory: ./backend
-        run: dotnet build --configuration Release --no-restore
+      - name: Build API project
+        run: dotnet build ./backend/src/OrderInventoryPlatform.Api/OrderInventoryPlatform.Api.csproj --configuration Release --no-restore
 
-      - name: dotnet publish
-        working-directory: ./backend
-        run: dotnet publish -c Release -o ./publish
+      - name: Publish API project
+        run: dotnet publish ./backend/src/OrderInventoryPlatform.Api/OrderInventoryPlatform.Api.csproj -c Release -o ./backend/publish --no-build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
