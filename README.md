@@ -127,6 +127,23 @@ npm run build  # production build
 npm run lint
 ```
 
+## Deployed App Screenshots
+
+### Dashboard
+![Dashboard](docs/images/deploy-dashboard.png)
+
+### Products
+![Products](docs/images/deploy-products.png)
+
+### Inventory
+![Inventory](docs/images/deploy-inventory.png)
+
+### Create Order
+![Create Order](docs/images/deploy-create-order.png)
+
+### Orders
+![Orders](docs/images/deploy-orders.png)
+
 ## Tech Stack
 
 - .NET 8 (`global.json` pins SDK `8.0.125`)

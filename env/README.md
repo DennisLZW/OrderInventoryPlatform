@@ -9,20 +9,3 @@ ASP.NET Core reads overrides from environment variables in `docker-compose.yml` 
 For local development you can also use [User Secrets](https://learn.microsoft.com/dotnet/core/extensions/user-secrets) or `appsettings.*.json` (do not commit secrets).
 
 Azure deployment steps and Bicep templates are in **`infra/azure/README.md`**.
-
-## Deployed app screenshots
-
-### Dashboard
-![Dashboard](../docs/images/deploy-dashboard.png)
-
-### Products
-![Products](../docs/images/deploy-products.png)
-
-### Inventory
-![Inventory](../docs/images/deploy-inventory.png)
-
-### Create Order
-![Create Order](../docs/images/deploy-create-order.png)
-
-### Orders
-![Orders](../docs/images/deploy-orders.png)
