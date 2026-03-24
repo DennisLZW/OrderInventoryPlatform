@@ -129,6 +129,8 @@ npm run lint
 
 ## Deployed App Screenshots
 
+Live demo: [Order Inventory Platform](https://brave-sand-02f16351e.2.azurestaticapps.net)
+
 ### Dashboard
 ![Dashboard](docs/images/deploy-dashboard.png)
 
