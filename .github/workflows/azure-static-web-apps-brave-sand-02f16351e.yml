@@ -22,6 +22,8 @@ jobs:
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
+        env:
+          VITE_API_BASE_URL: https://orderinventory-api-dennis-h2fjc0a5ffh6cxe9.australiaeast-01.azurewebsites.net
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_SAND_02F16351E }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
