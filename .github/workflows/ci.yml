@@ -26,13 +26,13 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Restore
-        run: dotnet restore OrderInventoryPlatform.slnx
+        run: dotnet restore OrderInventoryPlatform.sln
 
       - name: Build
-        run: dotnet build OrderInventoryPlatform.slnx --no-restore -c Release
+        run: dotnet build OrderInventoryPlatform.sln --no-restore -c Release
 
       - name: Test
-        run: dotnet test OrderInventoryPlatform.slnx --no-build -c Release --verbosity normal
+        run: dotnet test OrderInventoryPlatform.sln --no-build -c Release --verbosity normal
 
   frontend:
     name: Frontend (Vite)
